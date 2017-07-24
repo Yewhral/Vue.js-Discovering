@@ -7,7 +7,8 @@ new Vue({
         websiteTag: '<a href="http//www.thenetninja.co.uk">Test again</a>',
         age: 25,
         x:0,
-        y:0
+        y:0,
+        availabile:true
     },
 
     methods:{

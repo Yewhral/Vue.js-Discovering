@@ -19,6 +19,17 @@
     <button v-on:dblclick="add(10)"> Add 10 years</button>
     <button v-on:click="subtract(1)"> Subtract a year</button>
     <p>My age is: {{age}}</p>
+
+    <h2> Dynamic CSS</h2>
+    <h3> Example 1 </h3>
+    <div v-on:click="availabile =!availabile" v-bind:class="{availbile: availabile}">
+    <span>Testname</span>
+    </div>
+    <h3> Example 2 </h3>
+
+
+
+
     <div id="canvas" v-on:mousemove="updateXY">{{x}},{{y}}</div>
 </div>
 
