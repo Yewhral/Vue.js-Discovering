@@ -8,7 +8,8 @@ new Vue({
         age: 25,
         x:0,
         y:0,
-        availabile:true
+        available: false,
+        nearby: false
     },
 
     methods:{
@@ -24,6 +25,14 @@ new Vue({
         updateXY: function(e) {
           this.x = e.offsetX;
           this.y = e.offsetY;
+        }
+    },
+    computed:{
+        compClasses: function() {
+            return {
+                available: this.available,
+                nearby: this.nearby
+            }
         }
     }
 });
