@@ -31,7 +31,12 @@
     <div v-bind:class="compClasses">
         <span>Testname</span>
     </div>
-
+    <button v-on:click="error = !error">Toggle error</button>
+    <button v-on:click="success = !success">Toggle success</button>
+    <p v-if="error">Lorem ipsum dolor sit</p>
+    <p v-else-if="success">amet lorem sit dolor</p>
+    <p v-show="error">error happened</p>
+    <p v-show="success">success happened</p>
 
 
 
