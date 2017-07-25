@@ -17,7 +17,9 @@ new Vue({
             {name: 'DaHunter', age: 21},
             {name: 'Papps', age: 25},
             {name: 'Doethe', age: 26},
-        ]
+        ],
+        food: 'okonomyiaki'
+
 
 
     },
@@ -35,6 +37,10 @@ new Vue({
         updateXY: function(e) {
           this.x = e.offsetX;
           this.y = e.offsetY;
+        },
+        readRefs: function() {
+            console.log(this.$refs.input.value);
+            this.food = this.$refs.input.value;
         }
     },
     computed:{

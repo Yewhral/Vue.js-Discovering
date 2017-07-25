@@ -20,6 +20,11 @@
     <button v-on:click="subtract(1)"> Subtract a year</button>
     <p>My age is: {{age}}</p>
 
+    <p>Referencing:</p>
+    <input type="text" ref="input"/>
+    <button v-on:click="readRefs">Submit</button>
+    <p>My fav food is: {{food}}</p>
+
     <h2> Dynamic CSS</h2>
     <h3> Example 1 </h3>
     <div v-on:click="available = !available" v-bind:class="{available: available}">
