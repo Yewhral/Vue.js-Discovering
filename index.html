@@ -38,6 +38,19 @@
     <p v-show="error">error happened</p>
     <p v-show="success">success happened</p>
 
+    <ul>
+        <li v-for="character in characters">{{ character }}</li>
+    </ul>
+    <div v-for="(ninja, index) in ninjas">
+        <h4> {{index}}.{{ninja.name}}</h4>
+        <p>{{ninja.age}}</p>
+    </div>
+    <template v-for="ninja in ninjas">
+        <div v-for="(val,key) in ninja">
+            <p>{{key}} {{val}}</p>
+
+        </div>
+    </template>
 
 
     <div id="canvas" v-on:mousemove="updateXY">{{x}},{{y}}</div>

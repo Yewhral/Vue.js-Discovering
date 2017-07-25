@@ -11,7 +11,15 @@ new Vue({
         available: false,
         nearby: false,
         error: false,
-        success: false
+        success: false,
+        characters: ['Red', 'Green', 'Blue', 'Yellow', 'Silver'],
+        ninjas: [
+            {name: 'DaHunter', age: 21},
+            {name: 'Papps', age: 25},
+            {name: 'Doethe', age: 26},
+        ]
+
+
     },
 
     methods:{
